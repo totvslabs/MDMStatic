@@ -1740,7 +1740,7 @@
 /* Footer */
 
 	#footer {
-		@include padding(6em, 0);
+		@include padding(4em, 0);
 		background-color: darken(_palette(bg), 8);
 		text-align: center;
 
@@ -1878,4 +1878,30 @@ form.vertical {
 
 #header h1 a {
 	font-weight: 100;
+}
+
+.width-25 {
+	width: 25%;
+	float: left;
+}
+
+.clearfix {
+	clear: both;
+}
+
+ul#company {
+	margin-bottom: 3em;
+	ul {
+		text-align: left;
+		font-size: 0.7em;
+		line-height: 1.8;
+		li {
+			list-style: none;
+			color: #bbb;
+		}
+		li.name {
+			color: white;
+			font-weight: 300;
+		}
+	}
 }
