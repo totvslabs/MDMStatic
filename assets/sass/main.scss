@@ -580,7 +580,7 @@
 		}
 
 		&.icons {
-			cursor: default;
+			// cursor: default;
 			list-style: none;
 			padding-left: 0;
 
@@ -1383,13 +1383,10 @@
 			position: absolute;
 			right: 20px;
 			font-size: 14px;
-			border: none;
-			&:hover {
-				text-decoration: underline;
-			}
+			
 		}
 
-		h1 {
+		h2 {
 			@include vendor('transition', 'opacity #{_duration(transitions)} ease');
 			height: inherit;
 			left: 1.25em;
@@ -1490,7 +1487,7 @@
 		@include vendor('display', 'flex');
 		@include vendor('flex-direction', 'column');
 		@include vendor('justify-content', 'center');
-		cursor: default;
+		// cursor: default;
 		height: 100vh;
 		min-height: 35em;
 		overflow: hidden;
@@ -1876,8 +1873,9 @@ form.vertical {
     font-weight: 100;
 }
 
-#header h1 a {
+#header h2 a {
 	font-weight: 100;
+	font-size: 0.7em;
 }
 
 .width-25 {
@@ -1885,23 +1883,64 @@ form.vertical {
 	float: left;
 }
 
+.width-50 {
+	width: 50%;
+	float: left;
+}
+
 .clearfix {
 	clear: both;
 }
 
-ul#company {
+div.company {
+	margin: 0 auto;
 	margin-bottom: 3em;
+	text-align: left;
+	float: left;
+	width: 50%;
+	@include breakpoint(small) {
+		width: 100%;
+	}
 	ul {
-		text-align: left;
-		font-size: 0.7em;
+		
+		font-size: 1em;
 		line-height: 1.8;
+		padding-left: 0;
+
 		li {
 			list-style: none;
 			color: #bbb;
+			padding-left: 0;
 		}
 		li.name {
 			color: white;
 			font-weight: 300;
 		}
+	}
+}
+
+
+.company a, a.log-in {
+	border-bottom: none;
+	cursor: pointer;
+	&:hover {
+		border-bottom: dotted 1px;
+	}	
+}
+
+#header {
+	.img-container {
+		width: 40px;
+		height: 100%;
+		float: left;
+		padding: 5px;
+		// margin-right: 10px;
+		img {
+			width: 100%;
+		}
+	}
+	h2 {
+		width: 220px;
+
 	}
 }

@@ -1532,7 +1532,6 @@ ul {
         border-top: 0;
         padding-top: 0; }
   ul.icons {
-    cursor: default;
     list-style: none;
     padding-left: 0; }
     ul.icons li {
@@ -2222,11 +2221,8 @@ body.is-menu-visible #menu {
   #header a.log-in {
     position: absolute;
     right: 20px;
-    font-size: 14px;
-    border: none; }
-    #header a.log-in:hover {
-      text-decoration: underline; }
-  #header h1 {
+    font-size: 14px; }
+  #header h2 {
     -moz-transition: opacity 0.2s ease;
     -webkit-transition: opacity 0.2s ease;
     -ms-transition: opacity 0.2s ease;
@@ -2236,13 +2232,13 @@ body.is-menu-visible #menu {
     line-height: inherit;
     position: absolute;
     top: 0; }
-    #header h1 a {
+    #header h2 a {
       border: 0;
       display: block;
       height: inherit;
       line-height: inherit; }
       @media screen and (max-width: 736px) {
-        #header h1 a {
+        #header h2 a {
           font-size: 0.8em; } }
   #header nav {
     height: inherit;
@@ -2310,7 +2306,6 @@ body.is-menu-visible #menu {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  cursor: default;
   height: 100vh;
   min-height: 35em;
   overflow: hidden;
@@ -2625,27 +2620,56 @@ form.vertical {
 .wrapper.style3 h3 {
   font-weight: 100; }
 
-#header h1 a {
-  font-weight: 100; }
+#header h2 a {
+  font-weight: 100;
+  font-size: 0.7em; }
 
 .width-25 {
   width: 25%;
   float: left; }
 
+.width-50 {
+  width: 50%;
+  float: left; }
+
 .clearfix {
   clear: both; }
 
-ul#company {
-  margin-bottom: 3em; }
-  ul#company ul {
-    text-align: left;
-    font-size: 0.7em;
-    line-height: 1.8; }
-    ul#company ul li {
+div.company {
+  margin: 0 auto;
+  margin-bottom: 3em;
+  text-align: left;
+  float: left;
+  width: 50%; }
+  @media screen and (max-width: 736px) {
+    div.company {
+      width: 100%; } }
+  div.company ul {
+    font-size: 1em;
+    line-height: 1.8;
+    padding-left: 0; }
+    div.company ul li {
       list-style: none;
-      color: #bbb; }
-    ul#company ul li.name {
+      color: #bbb;
+      padding-left: 0; }
+    div.company ul li.name {
       color: white;
       font-weight: 300; }
+
+.company a, a.log-in {
+  border-bottom: none;
+  cursor: pointer; }
+  .company a:hover, a.log-in:hover {
+    border-bottom: dotted 1px; }
+
+#header .img-container {
+  width: 40px;
+  height: 100%;
+  float: left;
+  padding: 5px; }
+  #header .img-container img {
+    width: 100%; }
+#header h2 {
+  width: 220px; }
 
 /*# sourceMappingURL=main.css.map */
