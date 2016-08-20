@@ -65,3 +65,5 @@ We recommend that you spend not more than 5 hours on the challenge.
 1. A link to the github repository.
 
 2. Briefly explain the models that you used/built
+
+Apply at https://totvslabs.recruiterbox.com/jobs/fk06t8s
