@@ -1,0 +1,17 @@
+# ide generated targets
+target-eclipse
+target
+*.class
+*.log
+logs
+
+dea conf files
+.idea
+*.iml
+*.ipr
+*.iws
+out
+
+# OS generated files
+.DS_Store
+*.swp

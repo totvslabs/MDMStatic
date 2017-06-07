@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Carol</title>
+</head>
+<body>
+
+<style>
+	@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400');
+</style>
+<table cellpadding="0" cellspacing="0" border="0" width="600" align="center">
+	<tr>
+		<td bgcolor="#333e7f"><a href="{{ domain }}"><img src="carolheader.jpg" width="600" height="130" alt="Carol - Start getting insights through quality data" style="display: block;border:0;"></a></td>
+	</tr>
+	<tr>
+		<td style="font:22px 'Source Sans Pro', Helvetica, Arial, sans-serif;color:#000000;padding-top:20px;">You have reset your password in Carol.ai</td>
+	</tr>
+	<tr>
+		<td style="font:16px 'Source Sans Pro', Helvetica, Arial, sans-serif;color:#000000;">
+			<p style="margin: 16px 0;">User Account: {{ useremail }}<br>
+			Password Reset on {{ password-reset-datetime }}</p>
+	</tr>
+	<tr>
+		<td style="font:16px 'Source Sans Pro', Helvetica, Arial, sans-serif;color:#000000;">
+			<p style="margin: 16px 0;">If you didn’t request to reset password, <a href="mailto:support@carol.ai?subject=Password%20reset%20for%20user%20{{ username }}&body=I%20did't%20request%20password%20reset.">contact us</a>.</p>
+			<p style="margin: 16px 0;">Thanks,<br>Carol Team</p>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
