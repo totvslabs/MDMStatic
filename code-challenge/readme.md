@@ -2,7 +2,7 @@
 
 ##Who we are
 
-At TOTVS Labs we are building a platform that combines data with AI. We are democratizing access to AI to hundreds of thousands of companies worldwide in several industries, such as Manufacturing, Financial Services, Retail, Health and Education. You can learn more here: www.fluigdata.com.
+At TOTVS Labs we are building a platform that combines data with AI. We are democratizing access to AI to hundreds of thousands of companies worldwide in several industries, such as Manufacturing, Financial Services, Retail, Health and Education. You can learn more here: www.carol.ai.
 
 We are looking for a smart, self-motivated, and enthusiastic individual to join us on the journey in building the artificial intelligence of the future. You’ll get to work with a small and global team moving at breakneck speed.
 
