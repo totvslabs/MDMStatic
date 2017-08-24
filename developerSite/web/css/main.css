@@ -213,7 +213,8 @@ footer {
 
 @media (min-width: 1000px) {
     .card {
-        width: 33%;
+        /*width: 33%;*/
+        width: 50%;
     }
 }
 
