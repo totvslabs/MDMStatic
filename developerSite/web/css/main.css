@@ -52,7 +52,11 @@ footer {
 
 @media (min-width: 1000px) {
     .menu__content {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
         height: 80px;
     }
@@ -66,7 +70,11 @@ footer {
 
 @media (min-width: 1000px) {
     .menu__title {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
         align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         padding: 0;
     }
@@ -97,7 +105,11 @@ footer {
 
 @media (min-width: 460px) {
     .nav ul {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 }
@@ -177,7 +189,11 @@ footer {
 
 @media (min-width: 1000px) {
     .main__content {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
     }
 }
@@ -189,23 +205,37 @@ footer {
     background-color: #fff;
     border: 1px solid #f2f2f2;
     height: 280px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     text-decoration: none;
+    -webkit-transition: all .4s ease-out;
     transition: all .4s ease-out;
     text-align: center;
 }
 
 .card:hover {
     box-shadow: 0 14px 10px -10px #798c9d;
+    -webkit-transform: scale(1.055, 1.055);
     transform: scale(1.055, 1.055);
     z-index: 1;
 }
 
 @media (min-width: 460px) {
     .card {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
         text-align: left;
     }
@@ -287,7 +317,11 @@ footer {
 
 @media (min-width: 460px) {
     .footer__nav {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
     }
 }
