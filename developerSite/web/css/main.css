@@ -1,0 +1,313 @@
+html, body {
+    background-color: #fafbfc;
+    color: #000;
+    font-family: "Source Sans Pro", sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: normal;
+    line-height: 1em;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+div,
+header,
+nav,
+footer {
+    box-sizing: border-box;
+}
+
+/* generic */
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+
+/* menu */
+
+.menu {
+    background-color: #f2f2f2;
+}
+
+.menu__content {
+    display: block;
+    height: 100%;
+}
+
+@media (min-width: 1000px) {
+    .menu__content {
+        display: flex;
+        align-items: center;
+        height: 80px;
+    }
+}
+
+.menu__title {
+    display: block;
+    text-align: center;
+    padding: 20px 0;
+}
+
+@media (min-width: 1000px) {
+    .menu__title {
+        align-items: center;
+        display: flex;
+        padding: 0;
+    }
+}
+
+.menu__subtitle {
+    font-size: 18px;
+}
+
+
+/* nav */
+
+.nav {
+    display: block;
+    margin: 0 auto 20px;
+}
+
+@media (min-width: 1000px) {
+    .nav {
+        margin: 0 0 0 40px;
+    }
+}
+
+.nav ul {
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 460px) {
+    .nav ul {
+        justify-content: center;
+        display: flex;
+    }
+}
+
+.nav li {
+    margin:0 40px;
+}
+
+.nav a {
+    color: #767676;
+    display: block;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 2px 0;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+@media (min-width: 1000px) {
+    .nav a {
+        padding: 0;
+    }
+}
+
+
+/* intro */
+
+.intro__content {
+    padding: 50px 0;
+}
+
+@media (min-width: 1000px) {
+    .intro__content {
+        padding: 50px;
+    }
+}
+
+.intro__box {
+    background-color: #fff;
+    border: 1px dashed #4A4A4A;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+.intro__title {
+    color: #4A4A4A;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.intro__version {
+    margin-left: 20px;
+}
+
+.intro__description {
+    color: #4a4a4a;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.6em;
+    letter-spacing: 0.1em;
+}
+
+.intro__btn {
+    border: 1px solid #53A8E2;
+    border-radius: 3px;
+    color: #53A8E2;
+    display: inline-block;
+    letter-spacing: 0.15em;
+    padding: 15px;
+}
+
+
+/* main */
+
+@media (min-width: 1000px) {
+    .main__content {
+        justify-content: center;
+        display: flex;
+    }
+}
+
+
+/* card */
+
+.card {
+    background-color: #fff;
+    border: 1px solid #f2f2f2;
+    height: 280px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    transition: all .4s ease-out;
+    text-align: center;
+}
+
+.card:hover {
+    box-shadow: 0 14px 10px -10px #798c9d;
+    transform: scale(1.055, 1.055);
+    z-index: 1;
+}
+
+@media (min-width: 460px) {
+    .card {
+        flex-direction: row;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1000px) {
+    .card {
+        width: 33%;
+    }
+}
+
+.card__img {
+    width: 80px;
+    height: 85px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 460px) {
+    .card__img {
+        width: 130px;
+        height: 135px;
+        margin-bottom: 0;
+    }
+}
+
+.card__label {
+    width: 180px;
+    margin-left: 15px;
+}
+
+.card__title {
+    font-size: 22px;
+    font-style: italic;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+}
+
+.card__description {
+    color: #4a4a4a;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.card__cta {
+    color: #53A8E2;
+}
+
+.card:hover .card__cta {
+    text-decoration: underline;
+}
+
+
+/* footer */
+
+.footer {
+    margin: 80px 0 50px 0;
+    text-align: center;
+}
+
+.footer__label {
+    color: #4a4a4a;
+    font-size: 14px;
+}
+
+.footer__label a {
+    color: #4a4a4a;
+}
+
+.footer__label a:hover {
+    color: #53A8E2;
+}
+
+.footer__nav {
+    margin-top: 20px;
+    display: block;
+}
+
+@media (min-width: 460px) {
+    .footer__nav {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.footer__nav li {
+    color: #A3B1BA;
+    font-weight: 300;
+    margin: 10px 0;
+}
+
+@media (min-width: 460px) {
+    .footer__nav li {
+        margin: 0 15px;
+    }
+}
+
+.footer__nav a {
+    color: #53A8E2;
+    text-decoration: none;
+}
+
+.footer__nav a:hover {
+    text-decoration: underline;
+}
