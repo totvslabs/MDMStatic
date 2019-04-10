@@ -1,0 +1,15 @@
+{
+  "name": "ds-report",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "css": "sass --no-source-map --style compressed styles.scss styles.css",
+    "css-watch": "sass --watch --no-source-map styles.scss styles.css"
+  },
+  "private": true,
+  "dependencies": {
+    "@carol/scss3": "file:../../app/web-apps/carol-ui/libs/scss3",
+    "sass": "^1.18.0"
+  },
+  "devDependencies": {}
+}
