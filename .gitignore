@@ -15,3 +15,6 @@ out
 # OS generated files
 .DS_Store
 *.swp
+
+#node packages everywhere
+node_modules
