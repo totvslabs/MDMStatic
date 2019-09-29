@@ -3,26 +3,110 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Docs</title>
-</head>
-<body>
 
 	<style>
-		.grid-container {
+		@import url("https://p.typekit.net/p.css?s=1&k=crz0yrz&ht=tk&f=31141.31144.31145.31172&a=20935376&app=typekit&e=css");
+
+		.hub-is-home #hub-landing-top {
+			display: block;
+			text-align: center;
+		}
+
+		@font-face {
+			font-family:"interstate";
+			src:url("https://use.typekit.net/af/e5199f/00000000000000003b9ae7f4/27/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/e5199f/00000000000000003b9ae7f4/27/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/e5199f/00000000000000003b9ae7f4/27/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n4&v=3") format("opentype");
+			font-style:normal;
+			font-weight:400;
+		}
+
+		@font-face {
+			font-family:"interstate";
+			src:url("https://use.typekit.net/af/20ad3a/00000000000000003b9ae7f7/27/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/20ad3a/00000000000000003b9ae7f7/27/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/20ad3a/00000000000000003b9ae7f7/27/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n5&v=3") format("opentype");
+			font-style:normal;
+			font-weight:500;
+		}
+
+		@font-face {
+			font-family:"interstate-mono";
+			src:url("https://use.typekit.net/af/b07a72/00000000000000003b9ae813/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/b07a72/00000000000000003b9ae813/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/b07a72/00000000000000003b9ae813/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+			font-style:normal;
+			font-weight:400;
+		}
+
+		.gc {
 			display: grid;
 			grid-template-columns: auto auto;
 			grid-column-gap: 50px;
 		}
 
-		.grid-item {
+		.gc-item {
 			text-align: center;
 		}
-	</style>
 
-	<div class="grid-container">
-		<div class="grid-item">
-			
+		.item-content {
+			font: 400 15px/24px interstate, Helvetica, Arial, sans-serif;
+			color: #56626E;
+		}
+
+		.item-content h2 a {
+			font: 500 20px/28px interstate, Helvetica, Arial, sans-serif;
+			color: #212B36;
+			text-decoration: none;
+		}
+
+		.item-content h2 a:hover {
+			text-decoration: underline;
+		}
+
+		.item-content p {
+			margin-bottom: 16px;
+		}
+
+		.item-content a {}
+
+		.item-button {
+			background-color: #50388E;
+			border-radius: 4px;
+			box-sizing: border-box;
+			color: #fff;
+			display: inline-block;
+			padding: 8px 16px;
+			min-width: 134px;
+			text-decoration: none;
+		}
+
+		.item-button:hover {
+			background-color: #392370;
+			color: #fff;
+		}
+
+		.item-ilustra {
+			margin-bottom: 10px;
+		}
+
+		.item-img {
+			width: auto;
+			height: 190px;
+			margin: auto;
+		}
+
+		.copyright {
+			color: #56626E;
+			font: 400 12px/24px interstate, Helvetica, Arial, sans-serif;
+			text-align:center;
+			margin-top: 48px;
+		}
+	</style>
+</head>
+<body>
+
+<div class="gc">
+	<div class="gc-item">
+		<div class="item-content">
 			<div class="item-ilustra">
-				<img src="images/documentation/doc.svg" class="item-img" />
+				<a href="/docs">
+					<img src="https://cdn.jsdelivr.net/gh/totvslabs/MDMStatic/docs.carol.ai/images/doc.svg" class="item-img" alt="Carol 3.0 Documentation" />
+				</a>
 			</div>
 
 			<h2><a href="/docs">Documentation</a></h2>
@@ -32,14 +116,16 @@
 			<p>Check out our detailed documentation to get started with your own intelligent app.</p>
 
 			<p>
-				<button href="/docs" class="item-button">Get started</button>
+				<a href="/docs" class="item-button">Get started</a>
 			</p>
-
 		</div>
-		<div class="grid-item">
-
+	</div>
+	<div class="gc-item">
+		<div class="item-content">
 			<div class="item-ilustra">
-				<img src="images/changelog/log.svg" class="item-img" />
+				<a href="/changelog">
+					<img src="https://cdn.jsdelivr.net/gh/totvslabs/MDMStatic/docs.carol.ai/images/log.svg" class="item-img" alt="Carol 3.0 Changelog: What's new?" />
+				</a>
 			</div>
 
 			<h2><a href="/changelog">Changelog: What's new?</a></h2>
@@ -49,11 +135,13 @@
 			<p>Check out our changelog to see the latest news!</p>
 
 			<p>
-				<button href="/changelog" class="item-button">See what's new</button>
+				<a href="/changelog" class="item-button">See what's new</a>
 			</p>
-
 		</div>
 	</div>
+</div>
+
+<p class="copyright">© Copyright 2019, TOTVS Labs. All rights reserved. Legal Privacy</p>
 	
 </body>
 </html>
