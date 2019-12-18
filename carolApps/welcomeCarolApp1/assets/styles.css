@@ -1,0 +1,110 @@
+@import url("https://p.typekit.net/p.css?s=1&k=tzi7sty&ht=tk&f=31141.31142.31144.31145.31171.31172&a=18026690&app=typekit&e=css");
+@font-face {
+    font-family: "interstate";
+    src: url("https://use.typekit.net/af/e5199f/00000000000000003b9ae7f4/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/e5199f/00000000000000003b9ae7f4/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/e5199f/00000000000000003b9ae7f4/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-family:"interstate";
+    src:url("https://use.typekit.net/af/630ec8/00000000000000003b9ae7f8/27/l?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/630ec8/00000000000000003b9ae7f8/27/d?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/630ec8/00000000000000003b9ae7f8/27/a?primer=7fa3915bdafdf03041871920a205bef951d72bf64dd4c4460fb992e3ecc3a862&fvd=n7&v=3") format("opentype");
+    font-style:normal;
+    font-weight:700;
+}
+:root {
+    --primary-default: #3425A5;
+    --primary-medium: #7D74C5;
+
+    --text-default: #212B35;
+
+    --neutral-white: #fff;
+    --neutral-8: #F4F5F7;
+
+    --base-bg: var(--neutral-8);
+
+    --sp-xs: 8px;
+    --sp-sm: 16px;
+    --sp-md: 24px;
+    --sp-lg: 32px;
+    --sp-xl: 40px;
+    --sp-xxl: 48px;
+
+    --btn-height: 36px;
+}
+
+html, body {
+    background-color: var(--base-bg);
+    font-family: "interstate", sans-serif;
+    height: 100%;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1 {
+    color: var(--primary-default);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 48px;
+    margin-bottom: var(--sp-md);
+}
+
+p {
+    color: var(--text-default);
+    margin-bottom: var(--sp-md);
+}
+
+.btn-primary {
+    background-color: var(--primary-default);
+    border-radius: 4px;
+    border-width: 0;
+    box-sizing: border-box;
+    color: var(--neutral-white);
+    display: inline-block;
+    height: var(--btn-height);
+    line-height: var(--btn-height);
+    outline: none;
+    padding-left: var(--sp-sm);
+    padding-right: var(--sp-sm);
+    text-decoration: none;
+    transition: background-color .3s ease, color .3s ease;
+    white-space: nowrap;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--primary-medium);
+    text-decoration: none;
+}
+
+.main {
+    align-items: center;
+    background: url(./bg-flames.jpg) 0 35% no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+section.content {
+    max-width: 420px;
+    padding: var(--sp-xs) var(--sp-xxl);
+    text-align: center;
+}
+
+footer {
+    bottom: 0;
+    font-size: 12px;
+    line-height: 1em;
+    text-align: center;
+}
+
+.img-footer {
+    display: block;
+    height: auto;
+    margin: auto;
+    width: 140px;
+}
