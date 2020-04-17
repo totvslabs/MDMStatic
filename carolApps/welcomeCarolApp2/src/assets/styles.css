@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Inter var';
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+  font-named-instance: 'Regular';
+  src: url("./font/inter-web/Inter-roman.var.woff2?v=3.13") format("woff2");
+}
+
+:root {
+    --primary-default: #6F39CD;
+    --primary-medium: #B093E3;
+
+    --text-default: #212B35;
+
+    --neutral-white: #fff;
+    --neutral-8: #F4F5F7;
+
+    --base-bg: var(--neutral-8);
+
+    --sp-xs: 8px;
+    --sp-sm: 16px;
+    --sp-md: 24px;
+    --sp-lg: 32px;
+    --sp-xl: 40px;
+    --sp-xxl: 48px;
+
+    --btn-height: 36px;
+}
+
+html, body {
+    background-color: var(--base-bg);
+    font-family: 'Inter var', sans-serif;
+    height: 100%;
+    line-height: 1.4em;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+h1 {
+    color: var(--primary-default);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    line-height: 48px;
+    margin-bottom: var(--sp-md);
+}
+
+p {
+    color: var(--text-default);
+    font-weight: 200;
+    margin-bottom: var(--sp-md);
+}
+
+.btn-primary {
+    background-color: var(--primary-default);
+    border-radius: 4px;
+    border-width: 0;
+    box-sizing: border-box;
+    color: var(--neutral-white);
+    display: inline-block;
+    height: var(--btn-height);
+    line-height: var(--btn-height);
+    outline: none;
+    padding-left: var(--sp-sm);
+    padding-right: var(--sp-sm);
+    text-decoration: none;
+    transition: background-color .3s ease, color .3s ease;
+    white-space: nowrap;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--primary-medium);
+    text-decoration: none;
+}
+
+.main {
+    align-items: center;
+    background: url(./bg-flames.jpg) 0 35% no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+section.content {
+    max-width: 420px;
+    padding: var(--sp-xs) var(--sp-xxl);
+    text-align: center;
+}
+
+footer {
+    bottom: 0;
+    font-size: 12px;
+    line-height: 1em;
+    text-align: center;
+}
+
+.img-footer {
+    display: block;
+    height: auto;
+    margin: 40px auto;
+    width: 140px;
+}
