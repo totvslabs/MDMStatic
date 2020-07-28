@@ -9,7 +9,7 @@
   "private": true,
   "dependencies": {
     "@carol/scss3": "^2.13.1",
-    "sass": "^1.18.0"
+    "sass": "^1.26.10"
   },
   "devDependencies": {}
 }
