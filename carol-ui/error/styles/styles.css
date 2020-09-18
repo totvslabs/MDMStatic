@@ -1,0 +1,80 @@
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url("//cdn.carol.ai/static/carol-ui/fonts/InterWeb/Inter-Light.woff2?v=3.13") format("woff2"),
+    url("//cdn.carol.ai/static/carol-ui/fonts/InterWeb/Inter-Light.woff?v=3.13") format("woff");
+}
+
+html, body {
+    background-color: #fff;
+    box-sizing: border-box;
+    color: #56626E;
+    font-family: Inter, sans-serif;
+    font-size: 14px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.wrapper {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 40px;
+}
+
+.header {
+    flex: 0 0;
+    text-align: center;
+}
+
+    .header__image {
+        display: inline-block;
+        height: auto;
+        margin: auto;
+        width: 175px;
+    }
+
+.image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 80%;
+    flex: 1 1;
+    margin: 20px 0;
+}
+
+.footer {
+    flex: 0 0;
+    text-align: center;
+}
+
+.error {
+    margin-bottom: 20px;
+}
+
+    .error__code {
+        color: #000;
+        font-size: 96px;
+        font-weight: 300;
+        letter-spacing: -1.5px;
+        margin-bottom: 10px;
+    }
+
+    .error__msg {
+        font-weight: bold;
+    }
+
+    .error__detail {}
+
+.action {}
+
+    .action__link {
+        color: #6F39CD;
+    }
